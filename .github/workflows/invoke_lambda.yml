@@ -25,4 +25,4 @@ jobs:
           aws configure set region ap-southeast-1
       - name: Invoke Lambda Function-Purchase
         run: |
-          aws lambda invoke --function-name ProcessPurcharse --cli-binary-format raw-in-base64-out --payload '{ "name": "GITHUB" }' output.txt
+          aws lambda invoke --function-name ProcessPurcharse --cli-binary-format raw-in-base64-out --payload '{ "type": "GITHUB" }' output.txt
